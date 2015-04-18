@@ -1,0 +1,46 @@
+<include file="Public:head" />
+<div class="top">
+    <if condition="$news['id']">修改<else/>添加</if>新闻<a class="btn left_btn" href="{:U('Index/news')}">返回</a>
+</div>
+<hr/>
+<form action="__URL__/news_add" method="post" enctype="multipart/form-data">
+    <input name="id" type="hidden" value="{$news.id}">
+<table class="add_table">
+    <tr>
+        <th style="width: 140px" valign="top">标题</th>
+        <td><input type="text" class="px" name="news_title" value="{$news.news_title}"></td>
+    </tr>
+    <tr>
+        <th style=" vertical-align: top;">内容</th>
+        <td>
+            <textarea class="px"  id="Hfcontent" maxlength="200" name="news_content" style="width: 580px; height: 100px">{$news.news_content}</textarea>
+        </td>
+    </tr>
+    <tr>
+        <th>封面图片</th>
+        <td>
+        <!--<td> <input type="text" name="name" id="picurl" value="" class="px" style="width:400px;"/>-->
+            <input type="file" name="photo"  class="px"/>
+            <if condition="$news['news_url']"><input type="hidden" name="img_url" value="{$news.news_url}"/><img src="{$news.news_url}" class="px" style="height: 80px;float: right;"></if>
+        <!--<a href="javascript:;" onclic<a href="javascript:;" onclick="viewImg('picurl')">预览</a></td>-->
+        </td>
+    </tr>
+    <tr>
+        <th>显示模式</th>
+        <td>图文<input type="radio" name="type" value="1" <if condition="$news.type eq 1">checked</if> >标文<input <if condition="$news.type eq 2">checked</if> name="type" type="radio" value="2"></td>
+    </tr>
+    <tr>
+        <th>是否显示</th>
+        <td>是<input type="radio" name="is_show" value="1" <if condition="$news.is_show eq 1">checked</if> >否<input name="is_show" type="radio" value="0" <if condition="$news.is_show eq 0">checked</if> ></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="submit" class="btn submit_btn" value="确 认"></td>
+    </tr>
+</table>
+
+</form>
+
+
+</body>
+</html>
