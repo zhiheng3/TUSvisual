@@ -1,0 +1,166 @@
+/* ------- This is the CSS Reset ------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del,
+dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    font-family: 微软雅黑;
+}
+
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    margin-right: 5px;
+    padding: 6px 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #edffd1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0 none;
+    background-color: #4bbd00;
+}
+.left_btn{
+    margin-left: 30px;
+}
+.home_top{
+    width: 100%;
+    height: 80px;
+    background: #208ed3;
+}
+
+.home_left{
+
+    width: 200px;
+    min-height:550px ;
+
+    float: left;
+    padding: 5px;
+}
+.home_right{
+    background: #FFF;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 80px;
+    left: 215px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+
+}
+.right_iframe{
+    width: 100%;
+
+    border: none;
+    height: 581px;
+}
+.home_left_sub{
+    height: 35px;
+    line-height: 35px;
+    width: 98%;
+    border-left: 3px solid #6BD318;
+    font-family: "微软雅黑", "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background: #d3d3d3;
+    padding-left: 5px;
+    margin: 5px 0px;
+}
+.top{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-family: '微软雅黑';
+}
+/*表格*/
+.data-table {
+    margin: 10px 0;
+    font-family: '微软雅黑';
+}
+
+.data-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.data-table caption {
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.data-table thead th,
+.data-table tbody td {
+    padding:8px;
+    height: 19px;
+    line-height: 19px;
+    font-weight: 400;
+}
+.data-table thead th {
+    text-align: left;
+    color:#fff;
+    background-color: #353535;
+}
+.data-table thead th {background: #558ED5}
+.data-table tbody tr {
+    background-color: #fefefe;
+    color: #686868;
+}
+.data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.add_table{
+    font: 14px/1.5 "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;
+    color: #404040;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 40px;
+    line-height: 40px;
+}
+.px{
+    padding: 4px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    transition: all .3s linear;
+    border-color: #bbb;
+}
+textarea{
+    overflow: auto;
+    resize: none;
+}
+input[type='radio'] {
+    border-radius: 100%;
+    bottom: 3px;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 16px;
+}
+input[type='radio']:checked::before {
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+    color: #444;
+    font: inherit;
+    margin: 0 1px 0 0;
+    text-shadow: 0 1px 0 rgb(240, 240, 240);
+}

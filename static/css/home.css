@@ -1,0 +1,96 @@
+body{
+	background: url(/Public/Home/images/logo1.jpg);
+	background-size: cover;
+}
+.sj_home_top{
+	width: 100%;
+	min-height: 110px;
+}
+.sj_home_top_sub{
+	width: 1100px;
+	margin: auto;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.sj_home_content{
+	width: 100%;
+	min-height: 485px;
+}
+.sj_home_content_left{
+	min-height: 50px;
+	min-width: 1000px;
+	float: right;
+	padding-top: 2px; 
+}
+.sj_home_content_right{
+	width: 190px;
+	min-height: 50px;
+	float: right;
+}
+.sj_home_botton{
+	width: 100%;
+	min-height: 115px;
+}
+.design{
+	width: 180px;
+	height: 65px;
+	margin: 2px auto;
+}
+.design_0{
+	background: url(../images/buttom.png);
+}
+.design_1{
+	background: url(../images/buttom_1.png);
+}
+.design_2{
+	background: url(../images/buttom_2.png);
+}
+.design_3{
+	background: url(../images/buttom_3.png);
+}
+.design_4{
+	background: url(../images/buttom_4.png);
+}
+.design_5{
+	background: url(../images/buttom_5.png);
+}
+.design_6{
+	background: url(../images/buttom_6.png);
+}
+.sj_home_botton_sub{
+	width: 1000px;
+	margin: auto;
+	background: url(../images/botton_back.png);
+	background-size: cover;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+}
+.sj_home_botton_sub span{
+	font-family: "microsoft yahei";
+	font-family: "microsoft yahei";
+	color: #ffffff;
+	font-size: 18px;
+	border-left: 1px solid #8294af;
+	height: 25px;
+	line-height: 25px;
+	cursor:pointer;
+}
+.sj_home_botton_sub1{
+	width: 1000px;
+	margin: 20px auto;
+	text-align: center;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	color: white;
+}
+
+.float_div {
+	position: absolute;
+	top: 180px;
+	left: 100px;
+	z-index: 99;
+}
+.float_img{
+
+}
