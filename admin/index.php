@@ -1,15 +1,21 @@
+<?php
+session_start();
+if ($_SESSION['user'] != "admin") {
+	header("location: ./login.html");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>启迪视觉后台</title>
     <!-- Javascript -->
-    <script src="./static//js/jquery-1.8.2.min.js"></script>
+    <script src="../static/js/jquery-1.8.2.min.js"></script>
 </head>
 <body>
 <div class="home_top">
     <div class="home_top_left">启迪视觉后台管理</div>
-    <div class="home_log">您好,{$name}<a href="{:U('Index/log_out')}">注销</a></div>
+    <div class="home_log">您好,<?php echo $_SESSION['user'];?><a href="javascript:logout();">注销</a></div>
 </div>
 <div>
     <div class="home_left">
@@ -18,20 +24,33 @@
         <div class="home_left_sub" name="works">作品管理</div>
     </div>
     <div class="home_right">
-        <iframe class="right_iframe" src="{:U('Index/home')}" id="iframe"  frameBorder=0 scrolling=no></iframe>
+        <iframe class="right_iframe" src="./home.php" id="iframe"  frameBorder=0 scrolling=no></iframe>
     </div>
 </div>
 
 </body>
 <script>
     $(function () {
-
         $('.home_left_sub').click(function(){
             var name=$(this).attr('name');
-            $('.right_iframe').attr("src","/visual/admin.php/Index/"+name);
+            $('.right_iframe').attr("src","./"+name+".php");
         });
     });
 
+</script>
+<script>
+    //log out
+    function logout(){
+        $.post("../phplib/ajax.php",{
+            "method":"lg_logout"
+        },function(data){
+var result = JSON.parse(data);
+console.log(result);
+if (result["code"] == 0){
+    location.href="./login.html";
+}
+        });
+    }
 </script>
 <style>
     /* ------- This is the CSS Reset ------- */

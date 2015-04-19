@@ -1,4 +1,6 @@
-<include file="Public:head" />
+<?php
+require_once "homehead.php";
+?>
 		<div class="list_center">
 			<div class="list_center_release">
 				<!--作品名称-->
@@ -57,7 +59,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="list_bottom">
 			<div class="list_bottom_sub">
 				©2013 Copyright TusHoldings 版权所有-启迪控股股份有限公司——事业部  京ICP备0503286

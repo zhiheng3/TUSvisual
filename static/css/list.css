@@ -331,19 +331,19 @@ a{
 }
 
 /*作品详情*/
-.datails{
+.details{
 	margin: auto;
 	width: 1000px;
 	text-align: left;
 	color: #8c8c8c;
 }
-.datails_div{
+.details_div{
 	height: 35px;
 	line-height: 35px;
 	font-weight: 500;
 	color: #4a4849;
 	font-size: 16px;
 }
-.datails_name{
+.details_name{
 	font-size: 20px;
 }

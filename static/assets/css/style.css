@@ -25,7 +25,7 @@ h1 {
     text-shadow: 0 1px 4px rgba(0,0,0,.2);
 }
 
-form {
+#form {
     position: relative;
     width: 305px;
     margin: 15px auto 0 auto;
@@ -133,16 +133,15 @@ button:active {
 
 .error {
     display: none;
-    position: absolute;
-    top: 27px;
-    right: -55px;
-    width: 40px;
-    height: 40px;
-    background: #2d2d2d; /* browsers that don't support rgba */
-    background: rgba(45,45,45,.25);
+    position: relative;
+    height: 30px;
+    background: #ff2d2d; /* browsers that don't support rgba */
+    background: rgba(255,45,45,.25);
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 4px;
+    line-height:30px;
+    margin:20px 5px -10px 5px
 }
 
 .error span {
@@ -152,10 +151,6 @@ button:active {
     font-weight: 700;
     line-height: 40px;
     text-shadow: 0 1px 2px rgba(0,0,0,.1);
-    -o-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
 
 }
 

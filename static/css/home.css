@@ -1,5 +1,5 @@
 body{
-	background: url(/Public/Home/images/logo1.jpg);
+	background: url(./static/images/logo1.jpg);
 	background-size: cover;
 }
 .sj_home_top{
