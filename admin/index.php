@@ -11,6 +11,7 @@ if ($_SESSION['user'] != "admin") {
     <title>启迪视觉后台</title>
     <!-- Javascript -->
     <script src="../static/js/jquery-1.8.2.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./static/images/shijue.ico" media="screen" />
 </head>
 <body>
 <div class="home_top">

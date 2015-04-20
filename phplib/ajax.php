@@ -41,6 +41,32 @@ function aj_like($args) {
 	return $result;
 }
 
+function dl_news($args) {
+	$id = $args['id'];
+	$result = array();
+	$tmp = db_getNew($id);
+	unlink('.' . $tmp['url']);
+	if (db_deleteNew($id)) {
+		$result['code'] = 0;
+	} else {
+		$result['code'] = 1;
+	}
+	return $result;
+}
+
+function dl_works($args) {
+	$id = $args['id'];
+	$result = array();
+	$tmp = db_getWork($id);
+	unlink('.' . $tmp['url']);
+	if (db_deleteWork($id)) {
+		$result['code'] = 0;
+	} else {
+		$result['code'] = 1;
+	}
+	return $result;
+}
+
 $method = $_POST["method"];
 $args = parseArgs($_POST["args"]);
 $result = array();
@@ -69,6 +95,12 @@ switch ($method) {
 	case "lg_logout":
 		$result["code"] = 0;
 		session_destroy();
+		break;
+	case "dl_news":
+		$result = dl_news($args);
+		break;
+	case "dl_works":
+		$result = dl_works($args);
 		break;
 	default:
 		$result["code"] = 2;
