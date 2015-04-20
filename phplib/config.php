@@ -1,6 +1,6 @@
 <?php
 $config = array();
-$config["dbserver"] = "127.0.0.1";
+$config["dbserver"] = "59.66.137.39";
 $config["dbuser"] = "TUS";
 $config["dbpassword"] = "tus";
 $config["dbname"] = "TUS";
